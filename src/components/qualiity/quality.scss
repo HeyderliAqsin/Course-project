@@ -1,0 +1,65 @@
+#Quality {
+  background-image: url(../../../public/images/bg-03.6cef7ad1.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed !important;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .container {
+    color: #fff;
+    .services {
+      margin-bottom: 70px;
+      h3 {
+        letter-spacing: 0;
+        margin-bottom: 15px;
+        font-size: 2.625rem;
+        font-family: Muli, sans-serif;
+        font-weight: 700;
+      }
+      p {
+        padding: 0 15%;
+        margin-bottom: 30px;
+        font-size: 1.125rem;
+      }
+      .btn-rose {
+        color: #fff;
+        background-color: #ff1f59;
+        border-color: #ff1f59;
+        font-size: 16px;
+        padding: 14px 28px;
+        line-height: 1;
+        font-weight: 700;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: all 0.45s ease-in-out;
+        cursor: pointer;
+        text-align: center;
+        &:hover{
+            background-color: #fff;   
+             color: #212529;
+             border: 2px solid  #212529;
+        }
+      }
+    }
+    .sbox{
+        width: 20%;
+        float: left;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+        h5{
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 0 2%;
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-family: Muli,sans-serif;
+            font-weight: 700;
+            letter-spacing: -.5px;
+        }
+    }
+  }
+}

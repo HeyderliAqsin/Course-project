@@ -1,0 +1,40 @@
+#Popular {
+  .box {
+    padding: 35px 25px 45px;
+    border-radius: 8px;
+    width: 246.4px;
+    margin-right: 16px;
+    text-align: center;
+    .box-icon {
+      display: inline-block;
+      padding: 25px;
+      background-color: hsla(0, 0%, 100%, 0.1);
+      border-radius: 100%;
+      cursor: pointer;
+      img {
+        width: 72px;
+        height: 72px;
+        display: inline-block;
+        transition: all 0.45s ease-in-out;
+        vertical-align: middle;
+      }
+    }
+    .box-txt {
+      h5 {
+        color: #fff;
+        font-family: Muli, sans-serif;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        font-size: 1.25rem;
+        line-height: 1;
+        margin-bottom: 4px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 1.05rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

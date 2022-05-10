@@ -1,0 +1,56 @@
+#MiddleText {
+  background-image: url(../../../public/images/bg-01.e08b3b72.jpg);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed !important;
+  .review {
+    background-color: #f0f1f2;
+    border: 1px solid #eee;
+    padding: 25px 40px;
+    border-radius: 4px;
+    .quote-ico {
+      position: relative;
+      margin-bottom: -25px;
+      img {
+        width: 65px;
+        height: 65px;
+        opacity: 0.15;
+        vertical-align: middle;
+      }
+    }
+    p {
+      color: #757575;
+      font-size: 1.15rem;
+      line-height: 1.4;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    .review-author {
+      .tst-rating {
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 4px;
+      }
+      h5 {
+        line-height: 1;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+        color: #283034;
+        font-family: Muli,sans-serif;
+        font-weight: 700;
+        letter-spacing: -.5px;
+      }
+      span{
+        display: block;
+        color: #858585;
+        font-size: 1.1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

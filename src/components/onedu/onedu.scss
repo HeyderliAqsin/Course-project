@@ -1,0 +1,30 @@
+#Edu {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  .txt-block {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    h3 {
+      font-size: 2.5rem;
+      color: #283034;
+      font-family: Muli, sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    p {
+      font-size: 1.05rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+    .txt-list {
+      list-style: disc;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      li {
+        font-size: 1.05rem;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}

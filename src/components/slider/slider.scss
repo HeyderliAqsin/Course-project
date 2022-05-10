@@ -1,0 +1,60 @@
+.Slide {
+  .text {
+    position: absolute;
+    top: 30%;
+    z-index: 3;
+    width: 50.33333333%;
+    h2 {
+      font-size: 3.35rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    p {
+      padding-right: 15%;
+      margin-bottom: 30px;
+      font-size: 1.25rem;
+    }
+    .btn-rose {
+      font-size: 16px;
+      padding: 14px 28px;
+      color: #fff;
+      background-color: #ff1f59;
+      border-color: #ff1f59;
+      line-height: 1;
+      font-weight: 700;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      transition: all 0.45s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: #e0e3e2;
+        border-color: #333c49;
+        color: #333c49;
+      }
+    }
+  }
+  #bottom {
+    background: url(../../../public/images/bg-05.e2dd8b42.jpg);
+    padding-top: 20px;
+    padding-bottom: 18px;
+    width: 100%;
+    z-index: 4;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed !important;
+    .container {
+      .abox-1 {
+        padding-left: 25px;
+        img {
+          text-align: center;
+        }
+        .abox-txt {
+          color: #000;
+        }
+      }
+    }
+  }
+}

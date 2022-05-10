@@ -1,0 +1,119 @@
+#TeacherList {
+  margin-top: 90px;
+  nav {
+    .breadcrumb {
+      padding: 16px 5px 14px;
+      background-color: transparent;
+      margin-bottom: 0;
+      border-radius: 0;
+      border-bottom: 1px solid #efefef;
+      a {
+        color: #343536;
+        font-size: 0.925rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+  .instructors {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    .team-member {
+      text-align: center;
+      margin-bottom: 40px;
+      .team-member-photo {
+        position: relative;
+      }
+      .tm-social {
+        ul {
+          width: 100%;
+          display: inline-block;
+          padding-left: 0;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          z-index: 20;
+          zoom: 1;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+          &:hover{
+              opacity: 1;
+          }
+          li {
+            width: auto !important;
+            display: inline-block !important;
+            vertical-align: top;
+            clear: none !important;
+            padding: 0;
+            a{
+                width: 38px;
+                height: 38px;
+                color: #fff;
+                font-size: 1.05rem;
+                line-height: 38px!important;
+                margin-right: 1px;
+                display: block;
+                border-radius: 100%;
+                transition: all .4s ease-in-out;
+                &.ico-facebook{
+                    background-color: #3b5998;
+                }
+                &.ico-twitter{
+                    background-color: #00a9ed;
+                }
+                &.ico-linkedin{
+                    background-color: #015886;
+                }
+            }
+          }
+        }
+      }
+      .tm-meta {
+        padding-top: 25px;
+        h5 {
+          line-height: 1;
+          margin-bottom: 3px;
+          font-size: 1.25rem;
+          color: #283034;
+          font-family: Muli, sans-serif;
+          font-weight: 700;
+          letter-spacing: -0.5px;
+          a{
+            color: #333;
+            transition: all .4s ease-in-out;
+            text-decoration: none;
+          }
+        }
+        span {
+          color: #888;
+          display: block;
+          margin-bottom: 5px;
+        }
+        .tm-rating {
+          position: relative;
+          display: block;
+          i {
+            color: #ffb605;
+            font-size: 0.925rem;
+            line-height: 1;
+          }
+          span{
+            display: inline-block;
+            color: #000;
+            font-family: Muli,sans-serif;
+            font-weight: 800;
+            margin-left: 4px;
+            margin-bottom: 0;
+          }
+        }
+        p {
+          color: #888;
+          font-weight: 0.9rem;
+          line-height: 1;
+          margin-top: 5px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
