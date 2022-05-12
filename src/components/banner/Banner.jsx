@@ -6,10 +6,10 @@ const Banner = () => {
     <>
       <section id="Banner">
         <div className="container">
-          <div class="banner-holder">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-8">
-                <div class="banner-img">
+          <div className="banner-holder">
+            <div className="row d-flex align-items-center">
+              <div className="col-lg-8">
+                <div className="banner-img">
                   <img
                     className="img-fluid"
                     src="/images/banner-3-img.jpg"
@@ -17,12 +17,12 @@ const Banner = () => {
                   />
                 </div>
               </div>
-              <div class="col-lg-4">
-                <div class="banner-txt">
+              <div className="col-lg-4">
+                <div className="banner-txt">
                   <h4>
                     Learn something new every day with<span>eTreeks</span>
                   </h4>
-                  <a class="btn btn-rose" href="/courses-list">
+                  <a className="btn btn-rose" href="/courses-list">
                     Find Out More
                   </a>
                 </div>

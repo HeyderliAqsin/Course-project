@@ -4,10 +4,10 @@ import "./multiphoto.scss";
 const MultiPhoto = () => {
   return (
     <section id="MultiPhoto">
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
          <div className="col-lg-10 offset-lg-1">
-         <div class="top-text">
+         <div className="top-text">
             <h5>
               Our goal is to make online education work for everyone
             </h5>
@@ -20,17 +20,17 @@ const MultiPhoto = () => {
               aliquet non molestie augue tempor sapien
             </p>
           </div>
-          <div class="img-block">
-            <img class="img-fluid" src="/images/image-03.jpg" alt="" />
+          <div className="img-block">
+            <img className="img-fluid" src="/images/image-03.jpg" alt="" />
           </div>
          </div>
         </div>
-        <div class="boxes">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="abox d-flex">
+        <div className="boxes">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="abox d-flex">
                 <img  width={70} src="/images/tap.png" alt="" />
-                <div class="abox-txt">
+                <div className="abox-txt">
                   <h5>Trusted Content</h5>
                   <p>
                     Congue augue egestas magna volutpat dictum suscipit ipsum
@@ -39,10 +39,10 @@ const MultiPhoto = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="abox d-flex">
+            <div className="col-lg-4">
+              <div className="abox d-flex">
                 <img  width={70} src="/images/tap.png" alt="" />
-                <div class="abox-txt">
+                <div className="abox-txt">
                   <h5>Certified Teachers</h5>
                   <p>
                     Congue augue egestas magna volutpat dictum suscipit ipsum
@@ -51,10 +51,10 @@ const MultiPhoto = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="abox d-flex">
+            <div className="col-lg-4">
+              <div className="abox d-flex">
                 <img  width={70} src="/images/tap.png" alt="" />
-                <div class="abox-txt">
+                <div className="abox-txt">
                   <h5>Lifetime Access</h5>
                   <p>
                     Congue augue egestas magna volutpat dictum suscipit ipsum

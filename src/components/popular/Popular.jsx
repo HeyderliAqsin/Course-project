@@ -1,3 +1,4 @@
+import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import "./popular.scss";
 
@@ -14,8 +15,8 @@ const Popular = ({loading,data}) => {
               porta
             </p>
           </div>
-          <div class="title-btn">
-            <a class="btn" href="/courses-list">
+          <div className="title-btn">
+            <a className="btn" href="/courses-list">
               View All Courses
             </a>
           </div>
@@ -23,9 +24,38 @@ const Popular = ({loading,data}) => {
         <div className="row">
         {!loading && (
         <div className="container">
-         Loading...
+          <div className="row">
+            <div className="col-lg-3">
+              <Skeleton  count={10} />
+              <Skeleton width={"50%"} count={1} />
+              <Skeleton width={"10%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+            </div>
+            <div className="col-lg-3">
+              <Skeleton count={10} />
+              <Skeleton width={"50%"} count={1} />
+              <Skeleton width={"10%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+            </div>
+            <div className="col-lg-3">
+              <Skeleton count={10} />
+              <Skeleton width={"50%"} count={1} />
+              <Skeleton width={"10%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+            </div>
+            <div className="col-lg-3">
+              <Skeleton count={10} />
+              <Skeleton width={"50%"} count={1} />
+              <Skeleton width={"10%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+              <Skeleton width={"30%"} count={1} />
+            </div>
+          </div>
         </div>
-      )}
+        )}
           {data && data.map((pro) => (
             <div className="col-lg-3 mb-4" key={pro.id}>
               <div className="category-item">
@@ -37,8 +67,8 @@ const Popular = ({loading,data}) => {
                     alt=""
                   />
                 </div>
-                <div class="cbox">
-                  <p class="course-tags">
+                <div className="cbox">
+                  <p className="course-tags">
                     <Link to={`/about/${pro.id}`}>
                       <span>{pro.category.name}</span>
                       </Link>
@@ -54,8 +84,8 @@ const Popular = ({loading,data}) => {
                     <i className="fas fa-star-half-alt"></i>
                     <span> ({pro.rating} Ratings)</span>
                   </div>
-                  <span class="course-price">
-                    <span class="old-price"> $140.99</span>
+                  <span className="course-price">
+                    <span className="old-price"> $140.99</span>
                     {pro.price}
                   </span>
                 </div>

@@ -9,6 +9,7 @@ import Contacts  from '../pages/Contacts'
 import Home from '../pages/Home'
 import Detail from '../pages/Detail'
 import TeacherList from '../pages/TeacherList'
+import VideoDetail from '../pages/VideoDetail'
 
 const MyConfig = () => {
   return (
@@ -18,6 +19,7 @@ const MyConfig = () => {
         <Route path='/pages' element={<Pages/>}/>
         <Route path='/categories' element={<Categories/>}/>
         <Route path='/detail/:id' element={<Detail/>}/>
+        <Route path='/videodetail/:id' element={<VideoDetail/>}/>
         <Route path='/megamenu' element={<MegaMenu/>}/>
         <Route path='/teacherlist' element={<TeacherList/>}/>
         <Route path='/blog' element={<Blog/>}/>

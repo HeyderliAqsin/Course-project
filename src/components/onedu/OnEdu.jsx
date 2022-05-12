@@ -11,9 +11,9 @@ const OnEdu = () => {
               <img src="/images/image-01.png" alt="" />
             </div>
           </div>
-          <div class="col-md-7 col-lg-6">
-            <div class="txt-block mb-40">
-              <h3 class="h3-sm">
+          <div className="col-md-7 col-lg-6">
+            <div className="txt-block mb-40">
+              <h3 className="h3-sm">
                 Transform your life through online education
               </h3>
               <p>
@@ -21,7 +21,7 @@ const OnEdu = () => {
                 ipsum enim justo integer velna vitae auctor integer congue magna
                 and purus pretium risus ligula rutrum luctus ultrice
               </p>
-              <ul class="txt-list mb-15">
+              <ul className="txt-list mb-15">
                 <li>Nullam rutrum eget nunc varius etiam mollis risus undo</li>
                 <li>
                   Integer congue magna at pretium purus pretium ligula at rutrum

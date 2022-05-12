@@ -18,44 +18,44 @@ const Slider = () => {
       </SwiperSlide>
       <div className="container">
         <div className="text">
-          <h2 class="h1-sm">High quality courses from the leading experts</h2>
-          <p class="p-lg">
+          <h2 className="h1-sm">High quality courses from the leading experts</h2>
+          <p className="p-lg">
             Feugiat primis ligula gravida auctor egestas augue viverra mauri
             tortor in iaculis placerat an eugiat mauris ipsum undo viverra
             tortor gravida purus lorem in tortor a viverr
           </p>
-          <a href="#courses-4" class="btn btn-rose">
+          <a href="#courses-4" className="btn btn-rose">
             View Popular Courses
           </a>
         </div>
       </div>
       <section id="bottom">
-        <div class="container">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-4">
-              <div class="abox-1 d-flex align-items-center">
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col-md-4">
+              <div className="abox-1 d-flex align-items-center">
                 <img width={70} src="/images/online-learning.png" alt="" class="computer"/>
-                <div class="abox-txt ms-4">
-                  <h5 class="h5-md">2,769 online courses</h5>
-                  <p class="p-md">Explore a variety of fresh topics</p>
+                <div className="abox-txt ms-4">
+                  <h5 className="h5-md">2,769 online courses</h5>
+                  <p className="p-md">Explore a variety of fresh topics</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="abox-1 d-flex align-items-center">
-                <img width={60} src="/images/online-course.png" alt="" class="computer"/>
-                <div class="abox-txt ms-4">
-                  <h5 class="h5-md">2,769 online courses</h5>
-                  <p class="p-md">Explore a variety of fresh topics</p>
+            <div className="col-md-4">
+              <div className="abox-1 d-flex align-items-center">
+                <img width={60} src="/images/online-course.png" alt="" className="computer"/>
+                <div className="abox-txt ms-4">
+                  <h5 className="h5-md">2,769 online courses</h5>
+                  <p className="p-md">Explore a variety of fresh topics</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="abox-1 d-flex align-items-center">
-                <img width={60} src="/images/tap.png" alt="" class="computer"/>
-                <div class="abox-txt ms-4">
-                  <h5 class="h5-md">2,769 online courses</h5>
-                  <p class="p-md">Explore a variety of fresh topics</p>
+            <div className="col-md-4">
+              <div className="abox-1 d-flex align-items-center">
+                <img width={60} src="/images/tap.png" alt="" className="computer"/>
+                <div className="abox-txt ms-4">
+                  <h5 className="h5-md">2,769 online courses</h5>
+                  <p className="p-md">Explore a variety of fresh topics</p>
                 </div>
               </div>
             </div>

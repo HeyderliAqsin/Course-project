@@ -14,7 +14,7 @@ const VideoPart = () => {
         <div className="bg-scroll">
           <div className="video-content">
             <div className="container">
-              <div class="col-lg-8 offset-lg-2 video-txt text-center">
+              <div className="col-lg-8 offset-lg-2 video-txt text-center">
                 <h3>
                   Find the right instructor for you from over 10,000 teachers
                 </h3>
@@ -22,16 +22,16 @@ const VideoPart = () => {
               </div>
             </div>
           </div>
-          <div class="video-link">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 video-link text-center">
-                  <div class="play-btn text-center">
+          <div className="video-link">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-12 video-link text-center">
+                  <div className="play-btn text-center">
                     <a target="_blank" className="video-popup" href="https://youtu.be/Y6MlVop80y0">
                       <span></span>
                     </a>
                     <img
-                      class="img-fluid"
+                      className="img-fluid"
                       src="/images/video-3-img.jpg"
                       alt=""
                     />

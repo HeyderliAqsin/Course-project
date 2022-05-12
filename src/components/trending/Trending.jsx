@@ -21,8 +21,8 @@ const Trending = () => {
                 porta
               </p>
             </div>
-            <div class="title-btn">
-              <a class="btn" href="/courses-list">
+            <div className="title-btn">
+              <a className="btn" href="/courses-list">
                 View All Categorie
               </a>
             </div>
@@ -40,7 +40,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/calculator.png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -51,7 +51,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/photo (1).png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -62,7 +62,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/calculator.png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -73,7 +73,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/photo (1).png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -84,7 +84,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/calculator.png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -95,7 +95,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/calculator.png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>
@@ -106,7 +106,7 @@ const Trending = () => {
                 <div className="box-icon">
                   <img width={100} src="/images/photo (1).png" alt="" />
                 </div>
-                <div class="box-txt">
+                <div className="box-txt">
                   <h5>Languages</h5>
                   <p>137 Courses</p>
                 </div>

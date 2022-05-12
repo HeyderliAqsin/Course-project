@@ -40,7 +40,7 @@ const Home = () => {
     <Trending/>
     <BestOnline/>
     <MiddleText/>
-    <BestCourses/>
+    <BestCourses loading={loading} info={course}/>
     <MultiPhoto/>
     <VideoPart/>
     <Opportunity/>

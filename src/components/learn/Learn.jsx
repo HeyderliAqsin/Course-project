@@ -8,8 +8,8 @@ const Learn = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-                  <div class="txt-block">
-                    <h3 class="h3-sm">
+                  <div className="txt-block">
+                    <h3 className="h3-sm">
                       Learn new personal &amp; professional skills online
                     </h3>
                     <p>
@@ -18,7 +18,7 @@ const Learn = () => {
                       integer congue magna and purus pretium risus ligula rutrum
                       luctus ultrice
                     </p>
-                    <ul class="txt-list mb-15">
+                    <ul className="txt-list mb-15">
                       <li>
                         Nullam rutrum eget nunc varius etiam mollis risus undo
                       </li>
@@ -31,7 +31,7 @@ const Learn = () => {
                       </li>
                     </ul>
                     <a
-                      class="btn btn-md btn-rose tra-black-hover"
+                      className="btn btn-md btn-rose tra-black-hover"
                       href="/categories-list"
                     >
                       Start Learning Now

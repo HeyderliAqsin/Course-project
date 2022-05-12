@@ -4,10 +4,10 @@ import "./middletext.scss";
 const MiddleText = () => {
   return (
     <section id="MiddleText">
-      <div class="container">
-        <div class="row">
-            <div class="review">
-              <div class="quote-ico">
+      <div className="container">
+        <div className="row">
+            <div className="review">
+              <div className="quote-ico">
                 <img src="/images/left-quote.png" alt="" />
               </div>
               <p>
@@ -18,7 +18,7 @@ const MiddleText = () => {
                 egestas volutpat egestas magna consequat posuere nunc, eu
                 porttitor neque
               </p>
-              <div class="review-author">
+              <div className="review-author">
                 <div className="tst-rating">
                   <i className="fas fa-star"></i>
                   <i className="fas fa-star"></i>

@@ -22,7 +22,9 @@
 //           <div className="col-lg-6">
 
 //           </div>
+//       )}
 //         </div>
+        
 //       </div>
 //     </section>
 //   )

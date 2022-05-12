@@ -20,21 +20,21 @@ const BestOnline = () => {
             <div className="leftSide d-flex justify-content-between">
               <div className="cbox-txt">
                 <h5>
-                  English for Beginners: Intensive English Speaking Course
+                  English for Beginners: English Speaking Course
                 </h5>
                 <p>54 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="cr-rating">4.89 (331 Reviews)</span>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span className="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>7348
+                  <i className="fas fa-users"></i>7348
                 </p>
               </div>
               <div className="text-right">
@@ -50,18 +50,18 @@ const BestOnline = () => {
                 IT Management - Building Information Systems
                 </h5>
                 <p>48 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="cr-rating">4.89 (331 Reviews)</span>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span className="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>15491
+                  <i className="fas fa-users"></i>15491
                 </p>
               </div>
               <div className="text-right">
@@ -74,21 +74,21 @@ const BestOnline = () => {
             <div className="leftSide d-flex justify-content-between">
               <div className="cbox-txt">
                 <h5>
-                  English for Beginners: Intensive English Speaking Course
+                  English for Beginners: English Speaking Course
                 </h5>
                 <p>54 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="cr-rating">4.89 (331 Reviews)</span>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span className="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>7348
+                  <i className="fas fa-users"></i>7348
                 </p>
               </div>
               <div className="text-right">
@@ -104,18 +104,18 @@ const BestOnline = () => {
                 IT Management - Building Information Systems
                 </h5>
                 <p>48 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="cr-rating">4.89 (331 Reviews)</span>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span className="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>15491
+                  <i clclassNameass="fas fa-users"></i>15491
                 </p>
               </div>
               <div className="text-right">
@@ -128,21 +128,21 @@ const BestOnline = () => {
             <div className="leftSide d-flex justify-content-between">
               <div className="cbox-txt">
                 <h5>
-                  English for Beginners: Intensive English Speaking Course
+                  English for Beginners: English Speaking Course
                 </h5>
                 <p>54 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
                   <span class="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>7348
+                  <i className="fas fa-users"></i>7348
                 </p>
               </div>
               <div className="text-right">
@@ -158,18 +158,18 @@ const BestOnline = () => {
                 IT Management - Building Information Systems
                 </h5>
                 <p>48 Total Hours - Updated 2/2020</p>
-                <div class="course-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span class="cr-rating">4.89 (331 Reviews)</span>
+                <div className="course-rating">
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <i className="fas fa-star"></i>
+                  <span className="cr-rating">4.89 (331 Reviews)</span>
                 </div>
               </div>
               <div className="txt-center">
                 <p>
-                  <i class="fas fa-users"></i>15491
+                  <i className="fas fa-users"></i>15491
                 </p>
               </div>
               <div className="text-right">

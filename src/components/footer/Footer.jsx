@@ -41,8 +41,8 @@ const Footer = () => {
                     </ul>
                   </div>
                   <div className="col-lg-7">
-                    <h5 class="h5-md">Popular Categories</h5>
-                    <ul class="list-unstyled">
+                    <h5 className="h5-md">Popular Categories</h5>
+                    <ul className="list-unstyled">
                       <li>
                         <a href="/demo-1#">Business English</a>
                       </li>
@@ -64,10 +64,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-lg-3">
-              <div class="right">
+              <div className="right">
                 <h5>Stay in Touch</h5>
-                <form class="newsletter-form">
-                  <div class="input-group">
+                <form className="newsletter-form">
+                  <div className="input-group">
                     <input
                       type="email"
                       autocomplete="off"
@@ -75,21 +75,21 @@ const Footer = () => {
                       placeholder="Your Email Address"
                       required=""
                     />
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn btn-rose tra-rose-hover">
+                    <span className="input-group-btn">
+                      <button type="submit" className="btn btn-rose tra-rose-hover">
                         Subscribe
                       </button>
                     </span>
                   </div>
-                  <label class="form-notification"></label>
+                  <label className="form-notification"></label>
                 </form>
               </div>
             </div>
           </div>
-          <div class="bottom-footer">
-            <div class="row">
-              <div class="col-lg-8">
-                <ul class="d-flex bottom-footer-list list-unstyled">
+          <div className="bottom-footer">
+            <div className="row">
+              <div className="col-lg-8">
+                <ul className="d-flex bottom-footer-list list-unstyled">
                   <li>
                     <p>© Copyright eTreeks 2022</p>
                   </li>
@@ -99,32 +99,32 @@ const Footer = () => {
                     </p>
                   </li>
                   <li>
-                    <p class="last-li">
+                    <p className="last-li">
                       <a href="mailto:yourdomain@mail.com">hello@domain.com</a>
                     </p>
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4 text-right">
-                <ul class="foo-socials text-center clearfix list-unstyled">
+              <div className="col-lg-4 text-right">
+                <ul className="foo-socials text-center clearfix list-unstyled">
                   <li>
-                    <a class="ico-facebook" href="/demo-1#">
-                      <i class="fab fa-facebook-f"></i>
+                    <a className="ico-facebook" href="/demo-1#">
+                      <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="ico-twitter" href="/demo-1#">
-                      <i class="fab fa-twitter"></i>
+                    <a className="ico-twitter" href="/demo-1#">
+                      <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="ico-google-plus" href="/demo-1#">
-                      <i class="fab fa-google-plus-g"></i>
+                    <a className="ico-google-plus" href="/demo-1#">
+                      <i className="fab fa-google-plus-g"></i>
                     </a>
                   </li>
                   <li>
-                    <a class="ico-tumblr" href="/demo-1#">
-                      <i class="fab fa-tumblr"></i>
+                    <a className="ico-tumblr" href="/demo-1#">
+                      <i className="fab fa-tumblr"></i>
                     </a>
                   </li>
                 </ul>

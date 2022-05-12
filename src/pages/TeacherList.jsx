@@ -2,20 +2,20 @@ import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../api/API";
 import "./teacherlist.scss";
 
-const TeacherList = () => {
-  const [course, setCourses] = useState([]);
-  const [loading,setLoading]=useState(false);
+const TeacherList = () => { 
+  const [instructor, setInstructor] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const getCourseList = () => {
-      fetch(`${BASE_URL}/api/Course`)
+    const getInstructorList = () => {
+      fetch(`${BASE_URL}/api/Instructor`)
         .then((c) => c.json())
         .then((c) => {
-          setCourses(c);
+          setInstructor(c);
           setLoading(true);
         });
     };
-    getCourseList();
+    getInstructorList();
   }, []);
   return (
     <section id="TeacherList">
@@ -23,196 +23,66 @@ const TeacherList = () => {
         <nav>
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <a href="/demo-1">Home</a>
+              <a href="/">Home</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">
+            <li className="breadcrumb-item active" aria-current="page">
               Our Teachers
             </li>
           </ol>
         </nav>
         <div className="instructors">
           <div className="row">
+            {!loading && <div className="container">Loading...</div>}
+            {instructor && instructor.map((pro) => (
             <div className="col-lg-3">
-              <div class="team-member">
-                <div class="team-member-photo clearfix">
+              <div className="team-member">
+                <div className="team-member-photo clearfix">
                   <img
-                    class="img-fluid"
-                    src="images/team-3.jpg"
+                  style={{height:"400px",objectFit:"cover"}}
+                  className="img-fluid"
+                    src={pro.photoUrl}
                     alt="team-member-foto"
                   />
-                  <div class="tm-social clearfix">
-                    <ul class="text-center clearfix">
+                  <div className="tm-social clearfix">
+                    <ul className="text-center clearfix">
                       <li>
-                        <a class="ico-facebook" href="/teachers-list#">
-                          <i class="fab fa-facebook-f"></i>
+                        <a className="ico-facebook" href="/teachers-list#">
+                          <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>
                       <li>
-                        <a class="ico-twitter" href="/teachers-list#">
-                          <i class="fab fa-twitter"></i>
+                        <a className="ico-twitter" href="/teachers-list#">
+                          <i className="fab fa-twitter"></i>
                         </a>
                       </li>
                       <li>
-                        <a class="ico-linkedin" href="/teachers-list#">
-                          <i class="fab fa-linkedin-in"></i>
+                        <a className="ico-linkedin" href="/teachers-list#">
+                          <i className="fab fa-linkedin-in"></i>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="tm-meta">
-                  <h5 class="h5-md">
-                    <a href="/teacher-profile">Sam Richardson</a>
+                <div className="tm-meta">
+                  <h5 className="h5-md">
+                    <a href="/teacher-profile">{pro.name}</a>
                   </h5>
-                  <span>Head Of Department</span>
-                  <div class="tm-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="tm-rating">4.89</span>
+                  <span>{pro.profession}</span>
+                  <div className="tm-rating">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <span className="tm-rating">{pro.rating}</span>
                   </div>
-                  <p class="p-sm">31 Reviews</p>
+                  <p className="p-sm">{pro.review} Reviews</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
-              <div class="team-member">
-                <div class="team-member-photo clearfix">
-                  <img
-                    class="img-fluid"
-                    src="images/team-3.jpg"
-                    alt="team-member-foto"
-                  />
-                  <div class="tm-social clearfix">
-                    <ul class="text-center clearfix">
-                      <li>
-                        <a class="ico-facebook" href="/teachers-list#">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-twitter" href="/teachers-list#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-linkedin" href="/teachers-list#">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tm-meta">
-                  <h5 class="h5-md">
-                    <a href="/teacher-profile">Sam Richardson</a>
-                  </h5>
-                  <span>Head Of Department</span>
-                  <div class="tm-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="tm-rating">4.89</span>
-                  </div>
-                  <p class="p-sm">31 Reviews</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div class="team-member">
-                <div class="team-member-photo clearfix">
-                  <img
-                    class="img-fluid"
-                    src="images/team-3.jpg"
-                    alt="team-member-foto"
-                  />
-                  <div class="tm-social clearfix">
-                    <ul class="text-center clearfix">
-                      <li>
-                        <a class="ico-facebook" href="/teachers-list#">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-twitter" href="/teachers-list#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-linkedin" href="/teachers-list#">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tm-meta">
-                  <h5 class="h5-md">
-                    <a href="/teacher-profile">Sam Richardson</a>
-                  </h5>
-                  <span>Head Of Department</span>
-                  <div class="tm-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="tm-rating">4.89</span>
-                  </div>
-                  <p class="p-sm">31 Reviews</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3">
-              <div class="team-member">
-                <div class="team-member-photo clearfix">
-                  <img
-                    class="img-fluid"
-                    src="images/team-3.jpg"
-                    alt="team-member-foto"
-                  />
-                  <div class="tm-social clearfix">
-                    <ul class="text-center clearfix">
-                      <li>
-                        <a class="ico-facebook" href="/teachers-list#">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-twitter" href="/teachers-list#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="ico-linkedin" href="/teachers-list#">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="tm-meta">
-                  <h5 class="h5-md">
-                    <a href="/teacher-profile">Sam Richardson</a>
-                  </h5>
-                  <span>Head Of Department</span>
-                  <div class="tm-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="tm-rating">4.89</span>
-                  </div>
-                  <p class="p-sm">31 Reviews</p>
-                </div>
-              </div>
-            </div>
+             ))}
           </div>
+         
         </div>
       </div>
     </section>
