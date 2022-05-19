@@ -10,15 +10,14 @@ import "flag-icon-css/css/flag-icons.min.css";
 import { Provider } from "react-redux";
 import store from "./Redux/store";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Provider store={store}>
         <App />
-      </BrowserRouter>
-    </Provider>
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

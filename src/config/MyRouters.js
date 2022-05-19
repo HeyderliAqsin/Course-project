@@ -15,7 +15,7 @@ const MyConfig = () => {
   return (
     <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/about/:id' element={<About/>}/>
+        <Route path='/about' element={<About/>}/>
         <Route path='/pages' element={<Pages/>}/>
         <Route path='/categories' element={<Categories/>}/>
         <Route path='/detail/:id' element={<Detail/>}/>

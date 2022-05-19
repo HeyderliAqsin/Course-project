@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { BASE_URL } from '../api/API'
+
 import Banner from '../components/banner/Banner'
 import BestCourses from '../components/bestcourses/BestCourses'
 import BestOnline from '../components/bestonline/BestOnline'
@@ -15,32 +14,17 @@ import Trending from '../components/trending/Trending'
 import VideoPart from '../components/videopart/VideoPart'
 
 const Home = () => {
-  const [course, setCourses] = useState([]);
-  const [loading,setLoading]=useState(false);
-
-  useEffect(() => {
-    const getCourseList = () => {
-      fetch(`${BASE_URL}/api/Course`)
-        .then((c) => c.json())
-        .then((c) => {
-          setCourses(c);
-          setLoading(true);
-        });
-    };
-    getCourseList();
-  }, []);
-  
   return (
     <>
     <Slider/>
     <OnEdu />
-    <Popular loading={loading} data={course} />
+    <Popular/>
     <Learn/>
     <Quality/>
     <Trending/>
     <BestOnline/>
     <MiddleText/>
-    <BestCourses loading={loading} info={course}/>
+    <BestCourses/>
     <MultiPhoto/>
     <VideoPart/>
     <Opportunity/>

@@ -7,13 +7,13 @@ import './videodetail.scss'
 const VideoDetail = () => {
   const { id } = useParams();
   const [singleVideo, setSingleVideo] = useState();
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch(`${BASE_URL}/api/Course/videoLink/${id}`)
       .then((c) => c.json())
       .then((c) => setSingleVideo(c));
-    setLoading(false);
+    // setLoading(false);
     return () => {};
   }, [id]);
   return (

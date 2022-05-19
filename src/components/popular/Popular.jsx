@@ -1,8 +1,22 @@
+import { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { getPopularCourse } from "../../Redux/Actions/CourseAction";
 import "./popular.scss";
 
-const Popular = ({loading,data}) => {
+const Popular = () => {
+  const popular=useSelector(state=>state.coursePopular)
+  console.log(popular )
+  const {courses}=popular;
+  const [loading, setLoading] = useState(true);
+  const dispatch=useDispatch()
+  useEffect(() => {
+    dispatch(getPopularCourse());
+    setLoading(false)
+    },[dispatch])
+  
+  
   return (
     <section id="Popular">
       <div className="container">
@@ -22,32 +36,32 @@ const Popular = ({loading,data}) => {
           </div>
         </div>
         <div className="row">
-        {!loading && (
+        {loading && (
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
-              <Skeleton  count={10} />
+              <Skeleton  count={1} width={300} height={250} />
               <Skeleton width={"50%"} count={1} />
               <Skeleton width={"10%"} count={1} />
               <Skeleton width={"30%"} count={1} />
               <Skeleton width={"30%"} count={1} />
             </div>
             <div className="col-lg-3">
-              <Skeleton count={10} />
+              <Skeleton  count={1} width={300} height={250} />
               <Skeleton width={"50%"} count={1} />
               <Skeleton width={"10%"} count={1} />
               <Skeleton width={"30%"} count={1} />
               <Skeleton width={"30%"} count={1} />
             </div>
             <div className="col-lg-3">
-              <Skeleton count={10} />
+              <Skeleton  count={1} width={300} height={250} />
               <Skeleton width={"50%"} count={1} />
               <Skeleton width={"10%"} count={1} />
               <Skeleton width={"30%"} count={1} />
               <Skeleton width={"30%"} count={1} />
             </div>
             <div className="col-lg-3">
-              <Skeleton count={10} />
+              <Skeleton  count={1} width={300} height={250} />
               <Skeleton width={"50%"} count={1} />
               <Skeleton width={"10%"} count={1} />
               <Skeleton width={"30%"} count={1} />
@@ -56,7 +70,7 @@ const Popular = ({loading,data}) => {
           </div>
         </div>
         )}
-          {data && data.map((pro) => (
+          {courses?.map((pro) => (
             <div className="col-lg-3 mb-4" key={pro.id}>
               <div className="category-item">
                 <div className="photo">
@@ -70,7 +84,7 @@ const Popular = ({loading,data}) => {
                 <div className="cbox">
                   <p className="course-tags">
                     <Link to={`/about/${pro.id}`}>
-                      <span>{pro.category.name}</span>
+                      <span>{pro.categoryName}</span>
                       </Link>
                   </p>
                   <Link to={`/detail/${pro.id}`}>
@@ -86,7 +100,7 @@ const Popular = ({loading,data}) => {
                   </div>
                   <span className="course-price">
                     <span className="old-price"> $140.99</span>
-                    {pro.price}
+                    ${pro.price}
                   </span>
                 </div>
               </div>

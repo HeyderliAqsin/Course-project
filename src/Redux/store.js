@@ -1,28 +1,29 @@
-import { applyMiddleware, combineReducers,createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import { courseReducer } from "./Reducers/Coursereducer";
+import { getByIdCourseReducers, getDiscountCourses, getPopularCourseReducer } from "./Reducers/Coursereducer";
+import { getCategoryReducer } from "./Reducers/Categoryreducer";
+import { getInstructorsReducer } from "./Reducers/Instructorreducer";
 
 
-const reducer=combineReducers({
-    cart: courseReducer
+const reducer = combineReducers({
+  coursePopular: getPopularCourseReducer,
+  courseDiscount: getDiscountCourses,
+  categories: getCategoryReducer,
+  instructors:getInstructorsReducer,
+  IdCourse:getByIdCourseReducers
+});
 
-})
+const initialState = {
+  // returned: []
+};
 
-const cartItemsfromLocalStorage=localStorage.getItem("cartItems")?JSON.parse(localStorage.getItem("cartItems")):[]
+const middleware = [thunk];
 
-const initialState={
-    cart:{
-        cartItems:cartItemsfromLocalStorage
-    }
-}
-
-const middleware=[thunk]
-
-const store=createStore(
-    reducer,
-    initialState,
-    composeWithDevTools(applyMiddleware(...middleware))
-)
+const store = createStore(
+  reducer,
+  initialState,
+  composeWithDevTools(applyMiddleware(...middleware))
+);
 
 export default store;
