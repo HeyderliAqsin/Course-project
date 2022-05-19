@@ -3,17 +3,19 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./Detail.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getByIdCourse } from "../Redux/Actions/CourseAction";
+import { Modal } from "react-bootstrap";
 
 const Detail = () => {
+  const [smShow, setSmShow] = useState(false);
   let { id } = useParams();
-  const {courseByIdData} = useSelector((state) => state.IdCourse);
+  const { courseByIdData } = useSelector((state) => state.IdCourse);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getByIdCourse(id));
   }, [dispatch, id]);
-  console.log(courseByIdData)
+  console.log(courseByIdData);
 
   return (
     <section id="Detail">
@@ -97,11 +99,43 @@ const Detail = () => {
             {courseByIdData != null ? (
               <div className="col-lg-4">
                 <div className="course-data">
-                  <img
-                    className="img-fluid"
-                    src={courseByIdData.photoUrl}
-                    alt={courseByIdData.name}
-                  />
+                  <div className="photo">
+                    <img
+                      className="img-fluid"
+                      src={courseByIdData.photoUrl}
+                      alt={courseByIdData.name}
+                    />
+                    <div className="play">
+                      <i
+                        onClick={() => setSmShow(true)}
+                        class="fas fa-play fa-3x"
+                      ></i>
+                      <Modal
+                        size="lg"
+                        show={smShow}
+                        onHide={() => setSmShow(false)}
+                        aria-labelledby="example-modal-sizes-title-lg"
+                      >
+                        <Modal.Header closeButton>
+                          <Modal.Title id="example-modal-sizes-title-lg"></Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                          {" "}
+                          <iframe
+                            class="playerid"
+                            width="100%"
+                            height={500}
+                            src={courseByIdData.link}
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                          ></iframe>
+                          ...
+                        </Modal.Body>
+                      </Modal>
+                    </div>
+                  </div>
                   <div className="course-data-price text-center">
                     $ {courseByIdData.price}
                     <span className="old-price">$124.99</span>

@@ -81,12 +81,24 @@
       }
     }
     .course-data {
-      position: relative;
+      // position: relative;
       background-color: #fff;
       border: 1px solid #eee;
       padding: 8px;
       border-radius: 4px;
       box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+      .photo{
+        position: relative;
+        .play{
+          position: absolute;
+          top:35%;
+          left: 40%;
+          background-color: #fff;
+          padding: 21px 20px 21px 27px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
       .course-data-price {
         display: block;
         font-size: 1.65rem;
